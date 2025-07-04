@@ -14,7 +14,7 @@ const About = () => {
           </h2>
 
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-            <div>
+            <div className="text-center md:text-left">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 I'm Yashaswi Rajesh Patki, an AI Engineer with a passion for building intelligent, real-world systems. 
                 I'm currently pursuing my Master's in Artificial Intelligence at Yeshiva University, NY, and hold a 
@@ -36,7 +36,7 @@ const About = () => {
               </p>
               
               {/* Credly Profile Link */}
-              <div className="mt-6">
+              <div className="mt-6 flex justify-center md:justify-start">
                 <a
                   href="https://www.credly.com/users/yashaswi-patki"
                   target="_blank"
