@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Github, Linkedin, Mail, Heart, Award } from 'lucide-react';
+import { Github, Linkedin, Mail, Heart } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
             {/* Brand Section */}
             <div>
               <div className="text-3xl font-bold mb-3">
@@ -23,6 +23,19 @@ const Footer = () => {
               <p className="text-gray-300 mb-4 leading-relaxed text-sm">
                 Specialized in enterprise automation, AI integration, and scalable system architecture.
               </p>
+            </div>
+
+            {/* Contact Info */}
+            <div>
+              <h3 className="text-xl font-bold mb-6 text-white">Get In Touch</h3>
+              <div className="space-y-3 mb-6">
+                <p className="text-gray-400">
+                  <a href="mailto:ypatki@mail.yu.edu" className="hover:text-emerald-400 transition-colors duration-200 font-medium">
+                    ypatki@mail.yu.edu
+                  </a>
+                </p>
+                <p className="text-gray-400 font-medium">New York, NY</p>
+              </div>
               <div className="flex space-x-4">
                 <a
                   href="https://github.com/yashaswip"
@@ -46,69 +59,6 @@ const Footer = () => {
                 >
                   <Mail size={28} />
                 </a>
-              </div>
-            </div>
-
-            {/* Quick Links */}
-            <div>
-              <h3 className="text-xl font-bold mb-6 text-white">Quick Links</h3>
-              <ul className="space-y-3">
-                <li>
-                  <button
-                    onClick={() => document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' })}
-                    className="text-gray-400 hover:text-white transition-colors duration-200 hover:translate-x-1 transform inline-block"
-                  >
-                    About
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={() => document.querySelector('#skills')?.scrollIntoView({ behavior: 'smooth' })}
-                    className="text-gray-400 hover:text-white transition-colors duration-200 hover:translate-x-1 transform inline-block"
-                  >
-                    Skills
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={() => document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })}
-                    className="text-gray-400 hover:text-white transition-colors duration-200 hover:translate-x-1 transform inline-block"
-                  >
-                    Projects
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
-                    className="text-gray-400 hover:text-white transition-colors duration-200 hover:translate-x-1 transform inline-block"
-                  >
-                    Contact
-                  </button>
-                </li>
-                <li>
-                  <a
-                    href="https://www.credly.com/users/yashaswi-patki"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-white transition-colors duration-200 flex items-center hover:translate-x-1 transform"
-                  >
-                    <Award size={18} className="mr-2" />
-                    Credly Profile
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            {/* Contact Info */}
-            <div>
-              <h3 className="text-xl font-bold mb-6 text-white">Get In Touch</h3>
-              <div className="space-y-3">
-                <p className="text-gray-400">
-                  <a href="mailto:ypatki@mail.yu.edu" className="hover:text-emerald-400 transition-colors duration-200 font-medium">
-                    ypatki@mail.yu.edu
-                  </a>
-                </p>
-                <p className="text-gray-400 font-medium">New York, NY</p>
               </div>
             </div>
           </div>
