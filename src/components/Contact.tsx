@@ -7,12 +7,6 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-gradient-to-br from-emerald-50 via-blue-50 to-cyan-50">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">
-            <span className="bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
-              Let's Connect
-            </span>
-          </h2>
-
           <div className="bg-white rounded-3xl p-12 shadow-xl border border-gray-200">
             <div className="text-center mb-12">
               <h3 className="text-3xl font-bold text-gray-900 mb-6">Get In Touch</h3>
@@ -24,9 +18,7 @@ const Contact = () => {
               {/* Direct Contact Info */}
               <div className="flex flex-col sm:flex-row justify-center items-center gap-8 mb-12">
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center">
-                    <Mail className="text-white" size={20} />
-                  </div>
+                  <Mail className="text-emerald-600" size={24} />
                   <div className="text-left">
                     <p className="text-sm text-gray-600">Email</p>
                     <a href="mailto:ypatki@mail.yu.edu" className="text-emerald-600 hover:text-emerald-700 font-semibold transition-colors duration-200">
@@ -36,9 +28,7 @@ const Contact = () => {
                 </div>
                 
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center">
-                    <MapPin className="text-white" size={20} />
-                  </div>
+                  <MapPin className="text-purple-600" size={24} />
                   <div className="text-left">
                     <p className="text-sm text-gray-600">Location</p>
                     <p className="text-purple-600 font-semibold">New York, NY</p>
