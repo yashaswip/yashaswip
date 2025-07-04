@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { GraduationCap, Briefcase, Award, ExternalLink } from 'lucide-react';
+import { GraduationCap, Briefcase, Award } from 'lucide-react';
 
 const About = () => {
   return (
@@ -14,7 +13,7 @@ const About = () => {
           </h2>
 
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-            <div className="text-center md:text-left">
+            <div className="text-center">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 I'm Yashaswi Rajesh Patki, an AI Engineer with a passion for building intelligent, real-world systems. 
                 I'm currently pursuing my Master's in Artificial Intelligence at Yeshiva University, NY, and hold a 
@@ -34,19 +33,6 @@ const About = () => {
                 I'm actively looking for full-time opportunities in AI/ML where I can contribute to innovative 
                 projects and continue growing as a technologist.
               </p>
-              
-              {/* Credly Profile Link */}
-              <div className="mt-6 flex justify-center md:justify-start">
-                <a
-                  href="https://www.credly.com/users/yashaswi-patki"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200"
-                >
-                  <ExternalLink size={16} className="mr-2" />
-                  View My Credly Profile
-                </a>
-              </div>
             </div>
 
             <div className="relative">
