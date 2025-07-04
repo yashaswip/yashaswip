@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Github, ExternalLink, Calendar } from 'lucide-react';
 
@@ -15,7 +14,7 @@ const Projects = () => {
         'Veterinary imaging application'
       ],
       color: 'emerald',
-      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80'
+      image: 'https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80'
     },
     {
       title: 'Comments Indecency Detector',
