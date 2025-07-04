@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Github, Linkedin, Mail, Download, Code, Zap, Sparkles, Cpu, Brain, Rocket } from 'lucide-react';
+import { Github, Linkedin, Mail, Download, ArrowRight, Sparkles } from 'lucide-react';
 
 const Hero = () => {
   const scrollToSection = (href: string) => {
@@ -11,88 +11,72 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-emerald-50 via-blue-50 to-cyan-50 pt-20 relative overflow-hidden">
-      {/* Floating Icons Animation */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-20 left-10 animate-bounce delay-100">
-          <Code className="text-emerald-400 opacity-60" size={24} />
-        </div>
-        <div className="absolute top-32 right-16 animate-pulse delay-300">
-          <Brain className="text-blue-400 opacity-60" size={28} />
-        </div>
-        <div className="absolute bottom-32 left-20 animate-bounce delay-500">
-          <Zap className="text-purple-400 opacity-60" size={20} />
-        </div>
-        <div className="absolute top-40 left-1/4 animate-pulse delay-700">
-          <Sparkles className="text-pink-400 opacity-60" size={16} />
-        </div>
-        <div className="absolute bottom-40 right-1/4 animate-bounce delay-900">
-          <Cpu className="text-cyan-400 opacity-60" size={24} />
-        </div>
-        <div className="absolute top-60 right-32 animate-pulse delay-1100">
-          <Rocket className="text-orange-400 opacity-60" size={20} />
-        </div>
+    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 relative overflow-hidden">
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-20 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-blue-500/5 to-purple-500/5 rounded-full blur-3xl"></div>
       </div>
 
-      {/* Animated Background Shapes */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 left-1/3 w-32 h-32 bg-gradient-to-r from-emerald-200 to-blue-200 rounded-full opacity-20 animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/3 w-24 h-24 bg-gradient-to-r from-purple-200 to-pink-200 rounded-full opacity-20 animate-bounce"></div>
-        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-gradient-to-r from-cyan-200 to-blue-200 rounded-full opacity-30 animate-pulse delay-500"></div>
-      </div>
+      {/* Floating Grid Pattern */}
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%239C92AC" fill-opacity="0.05"%3E%3Ccircle cx="30" cy="30" r="1"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-40"></div>
 
       <div className="container mx-auto px-4 py-20 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
-          {/* Animated Status Badge */}
-          <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm rounded-full px-4 py-2 mb-6 shadow-sm transform hover:scale-105 transition-transform duration-300">
-            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-            <span className="text-sm font-medium text-gray-700">Available for opportunities</span>
+        <div className="max-w-5xl mx-auto text-center">
+          {/* Status Badge */}
+          <div className="inline-flex items-center gap-2 bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-full px-4 py-2 mb-8 shadow-lg">
+            <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+            <span className="text-sm font-medium text-slate-300">Open to opportunities</span>
           </div>
 
-          {/* Animated Main Title */}
-          <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            <span className="block mb-2 animate-fade-in">Hello, I'm</span>
-            <span className="bg-gradient-to-r from-emerald-600 via-blue-600 to-purple-600 bg-clip-text text-transparent animate-fade-in delay-300 inline-block transform hover:scale-105 transition-transform duration-300">
-              Yashaswi
-            </span>
-          </h1>
-
-          {/* Animated Subtitle with Typewriter Effect */}
-          <div className="text-2xl lg:text-3xl text-gray-700 mb-6 font-light animate-fade-in delay-500">
-            <span className="inline-block">AI Engineer</span>
-            <span className="animate-pulse mx-2">|</span>
-            <span className="inline-block">ML</span>
-            <span className="animate-pulse mx-2">|</span>
-            <span className="inline-block">NLP</span>
+          {/* Main Heading */}
+          <div className="mb-8">
+            <h1 className="text-6xl lg:text-7xl font-bold mb-4 leading-tight">
+              <span className="text-white block mb-2">Hi, I'm</span>
+              <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
+                Yashaswi
+              </span>
+            </h1>
+            <div className="flex items-center justify-center gap-4 text-xl lg:text-2xl text-slate-300 font-light">
+              <span>AI Engineer</span>
+              <div className="w-1 h-6 bg-purple-400 rounded-full"></div>
+              <span>ML Specialist</span>
+              <div className="w-1 h-6 bg-blue-400 rounded-full"></div>
+              <span>NLP Expert</span>
+            </div>
           </div>
 
-          {/* Animated Description */}
-          <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto animate-fade-in delay-700">
-            Building intelligent systems with impact. Passionate about creating AI solutions that make a difference in the world.
+          {/* Description */}
+          <p className="text-xl text-slate-400 mb-12 leading-relaxed max-w-3xl mx-auto">
+            Crafting intelligent systems that bridge the gap between complex algorithms and real-world impact. 
+            Passionate about pushing the boundaries of artificial intelligence.
           </p>
 
-          {/* Animated CTA Buttons */}
-          <div className="flex flex-wrap justify-center gap-4 mb-8 animate-fade-in delay-900">
-            <button className="bg-gradient-to-r from-emerald-600 to-blue-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transition-all duration-300 flex items-center gap-2 transform hover:scale-105 hover:-translate-y-1">
-              <Download size={20} className="animate-bounce" />
-              Download Resume
+          {/* CTA Buttons */}
+          <div className="flex flex-wrap justify-center gap-6 mb-12">
+            <button className="group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 flex items-center gap-3 shadow-lg hover:shadow-xl hover:shadow-purple-500/25 transform hover:-translate-y-1">
+              <Download size={20} />
+              <span>Download Resume</span>
+              <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
             </button>
             <button
               onClick={() => scrollToSection('#contact')}
-              className="border-2 border-emerald-600 text-emerald-600 px-8 py-4 rounded-full font-semibold hover:bg-emerald-600 hover:text-white transition-all duration-300 flex items-center gap-2 bg-white transform hover:scale-105 hover:-translate-y-1"
+              className="group bg-slate-800/50 hover:bg-slate-700/50 backdrop-blur-sm border border-slate-600/50 hover:border-slate-500/50 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 flex items-center gap-3 hover:shadow-lg transform hover:-translate-y-1"
             >
               <Mail size={20} />
-              Let's Connect
+              <span>Let's Connect</span>
+              <Sparkles size={16} className="group-hover:rotate-12 transition-transform" />
             </button>
           </div>
 
-          {/* Animated Social Links */}
-          <div className="flex justify-center gap-4 animate-fade-in delay-1100">
+          {/* Social Links */}
+          <div className="flex justify-center gap-6">
             <a
               href="https://github.com/yashaswip"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm hover:shadow-md transition-all duration-300 text-gray-700 hover:text-emerald-600 transform hover:scale-110 hover:-translate-y-1"
+              className="w-14 h-14 bg-slate-800/50 hover:bg-slate-700/50 backdrop-blur-sm border border-slate-700/50 hover:border-slate-600/50 rounded-full flex items-center justify-center transition-all duration-300 text-slate-300 hover:text-white hover:shadow-lg transform hover:-translate-y-1"
             >
               <Github size={20} />
             </a>
@@ -100,26 +84,23 @@ const Hero = () => {
               href="https://linkedin.com/in/yashaswi-patki"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm hover:shadow-md transition-all duration-300 text-gray-700 hover:text-blue-600 transform hover:scale-110 hover:-translate-y-1"
+              className="w-14 h-14 bg-slate-800/50 hover:bg-slate-700/50 backdrop-blur-sm border border-slate-700/50 hover:border-slate-600/50 rounded-full flex items-center justify-center transition-all duration-300 text-slate-300 hover:text-blue-400 hover:shadow-lg transform hover:-translate-y-1"
             >
               <Linkedin size={20} />
             </a>
             <a
               href="mailto:ypatki@mail.yu.edu"
-              className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm hover:shadow-md transition-all duration-300 text-gray-700 hover:text-emerald-600 transform hover:scale-110 hover:-translate-y-1"
+              className="w-14 h-14 bg-slate-800/50 hover:bg-slate-700/50 backdrop-blur-sm border border-slate-700/50 hover:border-slate-600/50 rounded-full flex items-center justify-center transition-all duration-300 text-slate-300 hover:text-purple-400 hover:shadow-lg transform hover:-translate-y-1"
             >
               <Mail size={20} />
             </a>
           </div>
 
-          {/* Animated Character Emojis */}
-          <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute top-1/3 left-8 text-4xl animate-bounce delay-200">🤖</div>
-            <div className="absolute top-1/2 right-8 text-3xl animate-pulse delay-400">⚡</div>
-            <div className="absolute bottom-1/3 left-16 text-2xl animate-bounce delay-600">💡</div>
-            <div className="absolute bottom-1/4 right-16 text-3xl animate-pulse delay-800">🚀</div>
-            <div className="absolute top-20 right-1/4 text-2xl animate-bounce delay-1000">🎯</div>
-            <div className="absolute bottom-20 left-1/3 text-2xl animate-pulse delay-1200">✨</div>
+          {/* Scroll Indicator */}
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <div className="w-6 h-10 border-2 border-slate-600 rounded-full flex justify-center">
+              <div className="w-1 h-3 bg-slate-400 rounded-full mt-2 animate-pulse"></div>
+            </div>
           </div>
         </div>
       </div>
