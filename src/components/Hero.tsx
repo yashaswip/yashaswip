@@ -30,7 +30,7 @@ const Hero = () => {
 
           {/* Subtitle */}
           <div className="text-2xl lg:text-3xl text-gray-700 mb-6 font-light">
-            AI Engineer | ML | NLP | Gen AI
+            AI Engineer | ML | NLP
           </div>
 
           {/* Description */}
