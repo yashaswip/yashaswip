@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import { Github, Linkedin, Mail, Heart, BookOpen } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -52,6 +52,14 @@ const Footer = () => {
                   className="text-gray-400 hover:text-blue-400 transition-all duration-300 hover:scale-125 transform"
                 >
                   <Linkedin size={28} />
+                </a>
+                <a
+                  href="https://www.researchgate.net/profile/Yashaswi-Patki?ev=hdr_xprf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-green-400 transition-all duration-300 hover:scale-125 transform"
+                >
+                  <BookOpen size={28} />
                 </a>
                 <a
                   href="mailto:ypatki@mail.yu.edu"

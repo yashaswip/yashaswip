@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Mail, MapPin, Github, Linkedin } from 'lucide-react';
+import { Mail, MapPin, Github, Linkedin, BookOpen } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -39,8 +39,7 @@ const Contact = () => {
 
             {/* Social Links */}
             <div className="text-center">
-              <h4 className="text-2xl font-bold text-gray-900 mb-8">Connect on Social</h4>
-              <div className="flex justify-center space-x-8">
+              <div className="flex justify-center space-x-6">
                 <a
                   href="https://linkedin.com/in/yashaswi-patki"
                   target="_blank"
@@ -62,6 +61,17 @@ const Contact = () => {
                     <Github size={28} />
                   </div>
                   <span className="mt-3 text-gray-700 font-medium group-hover:text-gray-900 transition-colors duration-200">GitHub</span>
+                </a>
+                <a
+                  href="https://www.researchgate.net/profile/Yashaswi-Patki?ev=hdr_xprf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex flex-col items-center"
+                >
+                  <div className="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center hover:bg-green-700 transition-all duration-300 transform hover:scale-110 shadow-lg group-hover:shadow-xl">
+                    <BookOpen size={28} />
+                  </div>
+                  <span className="mt-3 text-gray-700 font-medium group-hover:text-green-600 transition-colors duration-200">ResearchGate</span>
                 </a>
               </div>
             </div>
