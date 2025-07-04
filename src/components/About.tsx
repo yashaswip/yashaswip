@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { GraduationCap, Briefcase, Award } from 'lucide-react';
+import { GraduationCap, Briefcase, Award, ExternalLink } from 'lucide-react';
 
 const About = () => {
   return (
@@ -25,10 +25,28 @@ const About = () => {
                 at scale. My work focuses on creating AI systems that make a meaningful impact in healthcare, 
                 automation, and data analysis.
               </p>
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                With a strong foundation in machine learning algorithms, deep learning frameworks like PyTorch 
+                and TensorFlow, and hands-on experience in computer vision and natural language processing, 
+                I enjoy tackling complex problems and turning innovative ideas into practical solutions.
+              </p>
               <p className="text-lg text-gray-700 leading-relaxed">
                 I'm actively looking for full-time opportunities in AI/ML where I can contribute to innovative 
                 projects and continue growing as a technologist.
               </p>
+              
+              {/* Credly Profile Link */}
+              <div className="mt-6">
+                <a
+                  href="https://www.credly.com/users/yashaswi-patki"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200"
+                >
+                  <ExternalLink size={16} className="mr-2" />
+                  View My Credly Profile
+                </a>
+              </div>
             </div>
 
             <div className="relative">
@@ -86,7 +104,7 @@ const About = () => {
               <div className="flex-1">
                 <h4 className="text-xl font-semibold text-gray-900">B.E. – Information Technology</h4>
                 <p className="text-green-600 font-medium">Shri Sant Gajanan Maharaj College, India</p>
-                <p className="text-gray-600">2019 – 2023</p>
+                <p className="text-gray-600">2016 – 2020</p>
               </div>
             </div>
           </div>
