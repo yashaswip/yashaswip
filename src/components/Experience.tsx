@@ -12,12 +12,14 @@ const Experience = () => {
       type: 'Full-time',
       description: 'Developed and maintained enterprise-level applications, automated workflows using PowerApps and Power Automate, and integrated multiple data sources to improve system efficiency.',
       achievements: [
-        'Automated manual processes reducing processing time by 40%',
-        'Integrated 5+ data sources for unified reporting dashboard',
-        'Improved system efficiency through workflow optimization',
+        'Built enterprise apps and automated workflows using PowerApps, Power Automate, Dataverse, and SharePoint',
+        'Resolved complex issues via PowerApps Studio; collaborated with Microsoft engineering on escalations',
+        'Used Kusto and Unify for root cause analysis and performance diagnostics',
+        'Delivered POCs and low-code solutions aligned with business needs',
+        'Integrated diverse data sources to streamline operations and improve efficiency',
         'Received On-the-Spot Award for exceptional performance'
       ],
-      technologies: ['PowerApps', 'Power Automate', 'SQL', 'System Integration'],
+      technologies: ['PowerApps', 'Power Automate', 'Dataverse', 'SharePoint', 'Kusto', 'Unify'],
       color: 'blue'
     }
   ];
