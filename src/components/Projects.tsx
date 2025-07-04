@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Github, Calendar, ExternalLink } from 'lucide-react';
 
@@ -43,7 +42,7 @@ const Projects = () => {
         'Healthcare AI application'
       ],
       color: 'purple',
-      image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+      image: '/lovable-uploads/e7559ce6-426b-4507-92bf-3639e0ef3efc.png',
       githubLink: 'https://github.com/yashaswip/LLM-Based-Organ-Segmentation-for-Cancer-in-Radiotherapy'
     }
   ];
