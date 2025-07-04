@@ -27,36 +27,42 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-5xl mx-auto text-center">
           {/* Status Badge */}
-          <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-full px-4 py-2 mb-8 shadow-sm">
+          <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-full px-4 py-2 mb-8 shadow-sm animate-fade-in">
             <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
             <span className="text-sm font-medium text-gray-700">Open to opportunities</span>
           </div>
 
           {/* Main Heading */}
           <div className="mb-8">
-            <h1 className="text-6xl lg:text-7xl font-bold mb-4 leading-tight">
+            <h1 className="text-6xl lg:text-7xl font-bold mb-4 leading-tight animate-fade-in">
               <span className="text-gray-900 block mb-2">Hi, I'm</span>
               <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-600 bg-clip-text text-transparent">
                 Yashaswi
               </span>
             </h1>
             <div className="flex items-center justify-center gap-4 text-xl lg:text-2xl text-gray-600 font-light">
-              <span>AI Engineer</span>
-              <div className="w-1 h-6 bg-purple-500 rounded-full"></div>
-              <span>ML Specialist</span>
-              <div className="w-1 h-6 bg-blue-500 rounded-full"></div>
-              <span>NLP Expert</span>
+              <span className="animate-fade-in opacity-0 [animation-delay:0.5s] [animation-fill-mode:forwards] transform translate-y-2 transition-all duration-700 ease-out hover:scale-105 hover:text-blue-600 cursor-default">
+                AI Engineer
+              </span>
+              <div className="w-1 h-6 bg-purple-500 rounded-full animate-fade-in opacity-0 [animation-delay:0.7s] [animation-fill-mode:forwards] animate-pulse"></div>
+              <span className="animate-fade-in opacity-0 [animation-delay:0.9s] [animation-fill-mode:forwards] transform translate-y-2 transition-all duration-700 ease-out hover:scale-105 hover:text-emerald-600 cursor-default">
+                ML Specialist
+              </span>
+              <div className="w-1 h-6 bg-blue-500 rounded-full animate-fade-in opacity-0 [animation-delay:1.1s] [animation-fill-mode:forwards] animate-pulse"></div>
+              <span className="animate-fade-in opacity-0 [animation-delay:1.3s] [animation-fill-mode:forwards] transform translate-y-2 transition-all duration-700 ease-out hover:scale-105 hover:text-purple-600 cursor-default">
+                NLP Expert
+              </span>
             </div>
           </div>
 
           {/* Description */}
-          <p className="text-xl text-gray-600 mb-12 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 mb-12 leading-relaxed max-w-3xl mx-auto animate-fade-in opacity-0 [animation-delay:1.5s] [animation-fill-mode:forwards]">
             Crafting intelligent systems that bridge the gap between complex algorithms and real-world impact. 
             Passionate about pushing the boundaries of artificial intelligence.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-wrap justify-center gap-6 mb-12">
+          <div className="flex flex-wrap justify-center gap-6 mb-12 animate-fade-in opacity-0 [animation-delay:1.7s] [animation-fill-mode:forwards]">
             <button className="group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 flex items-center gap-3 shadow-lg hover:shadow-xl hover:shadow-purple-500/25 transform hover:-translate-y-1">
               <Download size={20} />
               <span>Download Resume</span>
@@ -73,7 +79,7 @@ const Hero = () => {
           </div>
 
           {/* Social Links */}
-          <div className="flex justify-center gap-6">
+          <div className="flex justify-center gap-6 animate-fade-in opacity-0 [animation-delay:1.9s] [animation-fill-mode:forwards]">
             <a
               href="https://github.com/yashaswip"
               target="_blank"
