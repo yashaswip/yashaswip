@@ -4,12 +4,11 @@ import { GraduationCap, Briefcase, Award, Code, Brain, Zap } from 'lucide-react'
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-white relative overflow-hidden">
+    <section id="about" className="py-20 bg-gray-50 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-50/30 via-purple-50/30 to-gray-50"></div>
-        <div className="absolute top-20 right-20 w-72 h-72 bg-blue-500/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 left-20 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-20 right-20 w-72 h-72 bg-blue-100/30 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 left-20 w-96 h-96 bg-purple-100/30 rounded-full blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -27,7 +26,7 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
             {/* Left Side - Visual */}
             <div className="relative">
-              <div className="relative bg-gradient-to-br from-gray-50 to-blue-50 rounded-3xl p-8 border border-gray-200 shadow-xl">
+              <div className="relative bg-white rounded-3xl p-8 border border-gray-200 shadow-xl">
                 <div className="flex items-center justify-center h-80">
                   <div className="relative">
                     <div className="text-8xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
