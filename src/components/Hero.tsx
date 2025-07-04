@@ -56,13 +56,13 @@ const Hero = () => {
           </div>
 
           {/* Description */}
-          <p className="text-xl text-gray-600 mb-12 leading-relaxed max-w-3xl mx-auto animate-fade-in opacity-0 [animation-delay:1.5s] [animation-fill-mode:forwards]">
+          <p className="text-xl text-gray-600 mb-12 leading-relaxed max-w-3xl mx-auto">
             Crafting intelligent systems that bridge the gap between complex algorithms and real-world impact. 
             Passionate about pushing the boundaries of artificial intelligence.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-wrap justify-center gap-6 mb-12 animate-fade-in opacity-0 [animation-delay:1.7s] [animation-fill-mode:forwards]">
+          <div className="flex flex-wrap justify-center gap-6 mb-12">
             <button className="group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 flex items-center gap-3 shadow-lg hover:shadow-xl hover:shadow-purple-500/25 transform hover:-translate-y-1">
               <Download size={20} />
               <span>Download Resume</span>
@@ -79,7 +79,7 @@ const Hero = () => {
           </div>
 
           {/* Social Links */}
-          <div className="flex justify-center gap-6 animate-fade-in opacity-0 [animation-delay:1.9s] [animation-fill-mode:forwards]">
+          <div className="flex justify-center gap-6">
             <a
               href="https://github.com/yashaswip"
               target="_blank"
