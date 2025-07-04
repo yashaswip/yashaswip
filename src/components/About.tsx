@@ -11,54 +11,40 @@ const About = () => {
             <div className="w-24 h-1 bg-blue-600 mx-auto rounded-full"></div>
           </div>
 
-          {/* Main Content Grid */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-            {/* Left Side - Animated Robot Image */}
-            <div className="flex justify-center">
-              <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 hover:scale-105">
-                <img 
-                  src="/lovable-uploads/fff7d752-5ac5-4e8c-ab47-ea0b4b76e217.png" 
-                  alt="AI Robot Illustration" 
-                  className="w-80 h-80 object-contain animate-fade-in hover:animate-pulse"
-                />
+          {/* Main Content - Full Width */}
+          <div className="mb-16">
+            <div className="space-y-6">
+              <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                  <div className="w-3 h-3 bg-blue-600 rounded-full mr-3 animate-pulse"></div>
+                  Who I Am
+                </h3>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  I'm <span className="font-semibold text-blue-600">Yashaswi Rajesh Patki</span>, an AI Engineer with a passion for building intelligent, real-world systems. 
+                  Completed graduation with Master's in Artificial Intelligence at Yeshiva University, NY.
+                </p>
               </div>
-            </div>
 
-            {/* Right Side - Content with animations */}
-            <div>
-              <div className="space-y-6">
-                <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-                    <div className="w-3 h-3 bg-blue-600 rounded-full mr-3 animate-pulse"></div>
-                    Who I Am
-                  </h3>
-                  <p className="text-lg text-gray-600 leading-relaxed">
-                    I'm <span className="font-semibold text-blue-600">Yashaswi Rajesh Patki</span>, an AI Engineer with a passion for building intelligent, real-world systems. 
-                    Completed graduation with Master's in Artificial Intelligence at Yeshiva University, NY.
-                  </p>
-                </div>
+              <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in" style={{animationDelay: '0.2s'}}>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                  <div className="w-3 h-3 bg-purple-600 rounded-full mr-3 animate-pulse" style={{animationDelay: '0.5s'}}></div>
+                  What I Do
+                </h3>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  I bring experience in <span className="font-semibold text-purple-600">ML, NLP, and Gen AI</span> with a practical background in deploying solutions 
+                  at scale. My work focuses on creating AI systems that make a meaningful impact in healthcare, automation, and data analysis.
+                </p>
+              </div>
 
-                <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in" style={{animationDelay: '0.2s'}}>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-                    <div className="w-3 h-3 bg-purple-600 rounded-full mr-3 animate-pulse" style={{animationDelay: '0.5s'}}></div>
-                    What I Do
-                  </h3>
-                  <p className="text-lg text-gray-600 leading-relaxed">
-                    I bring experience in <span className="font-semibold text-purple-600">ML, NLP, and Gen AI</span> with a practical background in deploying solutions 
-                    at scale. My work focuses on creating AI systems that make a meaningful impact in healthcare, automation, and data analysis.
-                  </p>
-                </div>
-
-                <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in" style={{animationDelay: '0.4s'}}>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-                    <div className="w-3 h-3 bg-cyan-600 rounded-full mr-3 animate-pulse" style={{animationDelay: '1s'}}></div>
-                    My Expertise
-                  </h3>
-                  <p className="text-lg text-gray-600 leading-relaxed">
-                    Strong foundation in <span className="font-semibold text-cyan-600">machine learning algorithms, deep learning frameworks</span> like PyTorch 
-                    and TensorFlow, with hands-on experience in computer vision and natural language processing.
-                  </p>
-                </div>
+              <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in" style={{animationDelay: '0.4s'}}>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                  <div className="w-3 h-3 bg-cyan-600 rounded-full mr-3 animate-pulse" style={{animationDelay: '1s'}}></div>
+                  My Expertise
+                </h3>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Strong foundation in <span className="font-semibold text-cyan-600">machine learning algorithms, deep learning frameworks</span> like PyTorch 
+                  and TensorFlow, with hands-on experience in computer vision and natural language processing.
+                </p>
               </div>
             </div>
           </div>
