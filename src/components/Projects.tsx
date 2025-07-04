@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Github, ExternalLink, Calendar } from 'lucide-react';
 
@@ -40,7 +41,7 @@ const Projects = () => {
         'Healthcare AI application'
       ],
       color: 'purple',
-      image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80'
+      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80'
     }
   ];
 
