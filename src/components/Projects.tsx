@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Github, ExternalLink, Calendar } from 'lucide-react';
 
@@ -15,7 +14,7 @@ const Projects = () => {
         'Veterinary imaging application'
       ],
       color: 'emerald',
-      image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.researchgate.net%2Ffigure%2FOur-calculation-of-VHS-there-are-six-key-points-A-B-C-D-E-and-F-VHS-6-AB_fig2_377471128&psig=AOvVaw23pIEJkCjCyAzp2Nf2OPDj&ust=1751732327921000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCNDU_svNo44DFQAAAAAdAAAAABAE&auto=format&fit=crop&w=1000&q=80'
+      image: '/lovable-uploads/3d0708d6-9130-486f-b383-4460ae408a73.png'
     },
     {
       title: 'Comments Indecency Detector',
@@ -41,7 +40,7 @@ const Projects = () => {
         'Healthcare AI application'
       ],
       color: 'purple',
-      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80'
+      image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80'
     }
   ];
 
