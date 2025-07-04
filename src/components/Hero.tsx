@@ -41,15 +41,15 @@ const Hero = () => {
               </span>
             </h1>
             <div className="flex items-center justify-center gap-4 text-xl lg:text-2xl text-gray-600 font-light">
-              <span className="animate-fade-in opacity-0 [animation-delay:0.5s] [animation-fill-mode:forwards] transform translate-y-2 transition-all duration-700 ease-out hover:scale-105 hover:text-blue-600 cursor-default">
+              <span className="opacity-0 animate-[fade-in_0.8s_ease-out_0.5s_forwards] hover:scale-110 hover:text-blue-600 transition-all duration-300 cursor-default">
                 AI Engineer
               </span>
-              <div className="w-1 h-6 bg-purple-500 rounded-full animate-fade-in opacity-0 [animation-delay:0.7s] [animation-fill-mode:forwards] animate-pulse"></div>
-              <span className="animate-fade-in opacity-0 [animation-delay:0.9s] [animation-fill-mode:forwards] transform translate-y-2 transition-all duration-700 ease-out hover:scale-105 hover:text-emerald-600 cursor-default">
+              <div className="w-1 h-6 bg-purple-500 rounded-full opacity-0 animate-[fade-in_0.6s_ease-out_0.7s_forwards] animate-pulse"></div>
+              <span className="opacity-0 animate-[slide-in-right_0.8s_ease-out_0.9s_forwards] hover:scale-110 hover:text-emerald-600 transition-all duration-300 cursor-default">
                 ML Specialist
               </span>
-              <div className="w-1 h-6 bg-blue-500 rounded-full animate-fade-in opacity-0 [animation-delay:1.1s] [animation-fill-mode:forwards] animate-pulse"></div>
-              <span className="animate-fade-in opacity-0 [animation-delay:1.3s] [animation-fill-mode:forwards] transform translate-y-2 transition-all duration-700 ease-out hover:scale-105 hover:text-purple-600 cursor-default">
+              <div className="w-1 h-6 bg-blue-500 rounded-full opacity-0 animate-[fade-in_0.6s_ease-out_1.1s_forwards] animate-pulse"></div>
+              <span className="opacity-0 animate-[scale-in_0.8s_ease-out_1.3s_forwards] hover:scale-110 hover:text-purple-600 transition-all duration-300 cursor-default">
                 NLP Expert
               </span>
             </div>
