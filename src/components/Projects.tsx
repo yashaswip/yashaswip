@@ -14,7 +14,8 @@ const Projects = () => {
         'Automates manual diagnostic process',
         'Veterinary imaging application'
       ],
-      color: 'emerald'
+      color: 'emerald',
+      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80'
     },
     {
       title: 'Comments Indecency Detector',
@@ -26,7 +27,8 @@ const Projects = () => {
         'ROC AUC: 0.9745',
         'Multi-label text classification'
       ],
-      color: 'blue'
+      color: 'blue',
+      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80'
     },
     {
       title: 'LLM-Based Organ Segmentation for Cancer in Radiotherapy',
@@ -38,7 +40,8 @@ const Projects = () => {
         'Multimodal approach (imaging + text)',
         'Healthcare AI application'
       ],
-      color: 'purple'
+      color: 'purple',
+      image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80'
     }
   ];
 
@@ -86,10 +89,15 @@ const Projects = () => {
                 className={`bg-white rounded-2xl border-2 transition-all duration-300 hover:shadow-xl p-8 ${getColorClasses(project.color)}`}
               >
                 <div className="flex flex-col lg:flex-row lg:items-start lg:space-x-8">
-                  {/* Project Visual */}
+                  {/* Project Image */}
                   <div className="lg:w-1/3 mb-6 lg:mb-0">
-                    <div className={`h-48 bg-gradient-to-br ${getGradientColors(project.color)} rounded-xl flex items-center justify-center shadow-lg`}>
-                      <div className="text-6xl font-bold text-white opacity-80">AI</div>
+                    <div className="relative h-48 rounded-xl overflow-hidden shadow-lg">
+                      <img 
+                        src={project.image} 
+                        alt={project.title}
+                        className="w-full h-full object-cover"
+                      />
+                      <div className={`absolute inset-0 bg-gradient-to-br ${getGradientColors(project.color)} opacity-20`}></div>
                     </div>
                   </div>
 

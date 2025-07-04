@@ -19,22 +19,6 @@ const Experience = () => {
       ],
       technologies: ['PowerApps', 'Power Automate', 'SQL', 'System Integration'],
       color: 'blue'
-    },
-    {
-      title: 'Graduate Research Assistant',
-      company: 'Yeshiva University',
-      location: 'New York, NY',
-      duration: 'Aug 2023 – Present',
-      type: 'Part-time',
-      description: 'Conducting research in AI and machine learning applications, focusing on medical imaging and natural language processing projects.',
-      achievements: [
-        'Developed deep learning models for medical image analysis',
-        'Published research on multimodal AI applications',
-        'Collaborated on cutting-edge AI projects',
-        'Mentored undergraduate students in ML concepts'
-      ],
-      technologies: ['PyTorch', 'TensorFlow', 'Python', 'Computer Vision', 'NLP'],
-      color: 'emerald'
     }
   ];
 
