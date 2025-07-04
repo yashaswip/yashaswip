@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Github, Calendar, ExternalLink } from 'lucide-react';
 
@@ -42,7 +43,7 @@ const Projects = () => {
         'Healthcare AI application'
       ],
       color: 'purple',
-      image: 'https://private-user-images.githubusercontent.com/156213765/442431683-adf593f5-b17e-4023-8a4d-d0709a57e1fe.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTE2NjYyNzcsIm5iZiI6MTc1MTY2NTk3NywicGF0aCI6Ii8xNTYyMTM3NjUvNDQyNDMxNjgzLWFkZjU5M2Y1LWIxN2UtNDAyMy04YTRkLWQwNzA5YTU3ZTFmZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDcwNFQyMTUyNTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03OGQwODVmYzNhOTQ1OGVmNTM3NjJiNDcxOWRiNTM4ZjcwMDk4NDgxZmI4NWQ4MTFkMmI1MDBiZDkzNDc2YTkwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.xEWIXEhjDZdvZ2R1OqU9EiLFEOszLKWFcUgn9mBdmbU',
+      image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
       githubLink: 'https://github.com/yashaswip/LLM-Based-Organ-Segmentation-for-Cancer-in-Radiotherapy'
     }
   ];
