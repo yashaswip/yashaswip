@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { GraduationCap, Briefcase, Award, Quote } from 'lucide-react';
+import { GraduationCap, Briefcase, Award } from 'lucide-react';
 
 const About = () => {
   return (
@@ -11,64 +12,21 @@ const About = () => {
             <div className="w-24 h-1 bg-blue-600 mx-auto rounded-full"></div>
           </div>
 
-          {/* Main Content - Full Width */}
+          {/* Main Content */}
           <div className="mb-16">
-            <div className="space-y-6">
-              <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-                  <div className="w-3 h-3 bg-blue-600 rounded-full mr-3 animate-pulse"></div>
-                  Who I Am
-                </h3>
-                <p className="text-lg text-gray-600 leading-relaxed">
-                  I'm <span className="font-semibold text-blue-600">Yashaswi Rajesh Patki</span>, an AI Engineer with a passion for building intelligent, real-world systems. 
-                  Completed graduation with Master's in Artificial Intelligence at Yeshiva University, NY.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in" style={{animationDelay: '0.2s'}}>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-                  <div className="w-3 h-3 bg-purple-600 rounded-full mr-3 animate-pulse" style={{animationDelay: '0.5s'}}></div>
-                  What I Do
-                </h3>
-                <p className="text-lg text-gray-600 leading-relaxed">
-                  I bring experience in <span className="font-semibold text-purple-600">ML, NLP, and Gen AI</span> with a practical background in deploying solutions 
-                  at scale. My work focuses on creating AI systems that make a meaningful impact in healthcare, automation, and data analysis.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in" style={{animationDelay: '0.4s'}}>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-                  <div className="w-3 h-3 bg-cyan-600 rounded-full mr-3 animate-pulse" style={{animationDelay: '1s'}}></div>
-                  My Expertise
-                </h3>
-                <p className="text-lg text-gray-600 leading-relaxed">
-                  Strong foundation in <span className="font-semibold text-cyan-600">machine learning algorithms, deep learning frameworks</span> like PyTorch 
-                  and TensorFlow, with hands-on experience in computer vision and natural language processing.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Motivational Quote */}
-          <div className="mb-16 animate-fade-in" style={{animationDelay: '0.5s'}}>
-            <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-3xl p-8 border border-gray-200 hover:shadow-lg transition-all duration-300 hover:scale-105 transform">
-              <div className="flex items-center justify-center mb-4">
-                <Quote className="text-blue-600 mr-3" size={32} />
-                <Quote className="text-purple-600 transform rotate-180" size={32} />
-              </div>
-              <blockquote className="text-center">
-                <p className="text-2xl font-medium text-gray-800 italic mb-4 leading-relaxed">
-                  "Be like a postage stamp, stick to one thing until you get there"
-                </p>
-                <footer className="text-lg text-gray-600 font-semibold">
-                  — Josh Billings
-                </footer>
-              </blockquote>
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in">
+              <p className="text-lg text-gray-600 leading-relaxed text-center">
+                I'm <span className="font-semibold text-blue-600">Yashaswi Rajesh Patki</span>, an AI Engineer with a passion for building intelligent, real-world systems. 
+                Completed graduation with Master's in Artificial Intelligence at Yeshiva University, NY. I bring experience in <span className="font-semibold text-purple-600">ML, NLP, and Gen AI</span> with a practical background in deploying solutions 
+                at scale. My work focuses on creating AI systems that make a meaningful impact in healthcare, automation, and data analysis with a 
+                strong foundation in <span className="font-semibold text-cyan-600">machine learning algorithms, deep learning frameworks</span> like PyTorch 
+                and TensorFlow, with hands-on experience in computer vision and natural language processing.
+              </p>
             </div>
           </div>
 
           {/* Animated Timeline */}
-          <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 animate-fade-in" style={{animationDelay: '0.6s'}}>
+          <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 animate-fade-in" style={{animationDelay: '0.2s'}}>
             <h3 className="text-3xl font-bold text-center mb-12 text-gray-900">
               My Journey
             </h3>
@@ -112,7 +70,7 @@ const About = () => {
           </div>
 
           {/* Animated Call to Action */}
-          <div className="text-center mt-16 animate-fade-in" style={{animationDelay: '0.8s'}}>
+          <div className="text-center mt-16 animate-fade-in" style={{animationDelay: '0.4s'}}>
             <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-3xl p-8 hover:shadow-lg transition-all duration-300 hover:scale-105 transform">
               <h3 className="text-2xl font-bold mb-4 text-gray-900">Ready to Collaborate?</h3>
               <p className="text-lg mb-6 text-gray-600">

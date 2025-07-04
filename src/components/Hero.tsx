@@ -10,6 +10,10 @@ const Hero = () => {
     }
   };
 
+  const handleResumeDownload = () => {
+    window.open('https://drive.google.com/file/d/1xU3FC8hJHX1aA4pXXpHSqyXcLALeC80-/view?usp=share_link', '_blank');
+  };
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-blue-50 to-gray-50 relative overflow-hidden">
       {/* Animated Background Elements */}
@@ -46,11 +50,11 @@ const Hero = () => {
               </span>
               <div className="w-1 h-6 bg-purple-500 rounded-full opacity-0 animate-[fade-in_0.6s_ease-out_0.7s_forwards] animate-pulse"></div>
               <span className="opacity-0 animate-[slide-in-right_0.8s_ease-out_0.9s_forwards] hover:scale-110 hover:text-emerald-600 transition-all duration-300 cursor-default">
-                ML Specialist
+                Gen AI
               </span>
               <div className="w-1 h-6 bg-blue-500 rounded-full opacity-0 animate-[fade-in_0.6s_ease-out_1.1s_forwards] animate-pulse"></div>
               <span className="opacity-0 animate-[scale-in_0.8s_ease-out_1.3s_forwards] hover:scale-110 hover:text-purple-600 transition-all duration-300 cursor-default">
-                NLP Expert
+                NLP
               </span>
             </div>
           </div>
@@ -63,7 +67,10 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap justify-center gap-6 mb-12">
-            <button className="group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 flex items-center gap-3 shadow-lg hover:shadow-xl hover:shadow-purple-500/25 transform hover:-translate-y-1">
+            <button
+              onClick={handleResumeDownload}
+              className="group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 flex items-center gap-3 shadow-lg hover:shadow-xl hover:shadow-purple-500/25 transform hover:-translate-y-1"
+            >
               <Download size={20} />
               <span>Download Resume</span>
               <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
