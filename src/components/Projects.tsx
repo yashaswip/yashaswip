@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Github, ExternalLink, Calendar } from 'lucide-react';
+import { Github, Calendar } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
@@ -15,7 +15,8 @@ const Projects = () => {
         'Veterinary imaging application'
       ],
       color: 'emerald',
-      image: '/lovable-uploads/3d0708d6-9130-486f-b383-4460ae408a73.png'
+      image: '/lovable-uploads/3d0708d6-9130-486f-b383-4460ae408a73.png',
+      githubLink: 'https://github.com/yashaswip/Dog_VHS'
     },
     {
       title: 'Comments Indecency Detector',
@@ -28,7 +29,8 @@ const Projects = () => {
         'Multi-label text classification'
       ],
       color: 'blue',
-      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80'
+      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+      githubLink: 'https://github.com/yashaswip/COMMMENT-INDECENCY-DETECTOR'
     },
     {
       title: 'LLM-Based Organ Segmentation for Cancer in Radiotherapy',
@@ -41,7 +43,8 @@ const Projects = () => {
         'Healthcare AI application'
       ],
       color: 'purple',
-      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80'
+      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+      githubLink: 'https://github.com/yashaswip/LLM-Based-Organ-Segmentation-for-Cancer-in-Radiotherapy'
     }
   ];
 
@@ -142,16 +145,17 @@ const Projects = () => {
                       </div>
                     </div>
 
-                    {/* Action Buttons */}
-                    <div className="flex space-x-4">
-                      <button className={`flex items-center px-4 py-2 bg-gradient-to-r ${getGradientColors(project.color)} text-white rounded-lg hover:shadow-md transition-all duration-200 hover:scale-105`}>
+                    {/* Action Button */}
+                    <div>
+                      <a
+                        href={project.githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`inline-flex items-center px-4 py-2 bg-gradient-to-r ${getGradientColors(project.color)} text-white rounded-lg hover:shadow-md transition-all duration-200 hover:scale-105`}
+                      >
                         <Github size={16} className="mr-2" />
                         View Code
-                      </button>
-                      <button className="flex items-center px-4 py-2 border-2 border-gray-300 text-gray-700 rounded-lg hover:border-gray-400 transition-all duration-200">
-                        <ExternalLink size={16} className="mr-2" />
-                        Live Demo
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>
