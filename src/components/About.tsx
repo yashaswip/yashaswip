@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { GraduationCap, Briefcase, Award, Code, Brain, Zap } from 'lucide-react';
+import { GraduationCap, Briefcase, Award, Code, Brain, Zap, Bot, Cpu, CircuitBoard } from 'lucide-react';
 
 const About = () => {
   return (
@@ -24,28 +24,45 @@ const About = () => {
 
           {/* Main Content Grid */}
           <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
-            {/* Left Side - Visual */}
+            {/* Left Side - Robot Visual */}
             <div className="relative">
               <div className="relative bg-white rounded-3xl p-8 border border-gray-200 shadow-xl">
                 <div className="flex items-center justify-center h-80">
                   <div className="relative">
-                    <div className="text-8xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                      AI
+                    {/* Main Robot Body */}
+                    <div className="relative bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl p-6 border-2 border-blue-200">
+                      <div className="w-32 h-32 bg-white rounded-xl border border-gray-200 flex items-center justify-center mb-4 shadow-sm">
+                        <Bot className="text-blue-600 animate-pulse" size={48} />
+                      </div>
+                      
+                      {/* Robot Arms */}
+                      <div className="absolute -left-4 top-8 w-8 h-16 bg-gradient-to-b from-blue-200 to-purple-200 rounded-full border border-blue-300"></div>
+                      <div className="absolute -right-4 top-8 w-8 h-16 bg-gradient-to-b from-blue-200 to-purple-200 rounded-full border border-blue-300"></div>
+                      
+                      {/* Robot Legs */}
+                      <div className="absolute -bottom-2 left-6 w-6 h-12 bg-gradient-to-b from-blue-200 to-purple-200 rounded-b-full border border-blue-300"></div>
+                      <div className="absolute -bottom-2 right-6 w-6 h-12 bg-gradient-to-b from-blue-200 to-purple-200 rounded-b-full border border-blue-300"></div>
                     </div>
-                    <div className="absolute -top-4 -right-4 w-8 h-8 bg-blue-500 rounded-full animate-pulse"></div>
-                    <div className="absolute -bottom-2 -left-2 w-6 h-6 bg-purple-500 rounded-full animate-bounce"></div>
+                    
+                    {/* Floating Tech Elements */}
+                    <div className="absolute -top-2 -left-2 w-8 h-8 bg-blue-500 rounded-full animate-bounce flex items-center justify-center">
+                      <Code className="text-white" size={16} />
+                    </div>
+                    <div className="absolute -top-2 -right-2 w-8 h-8 bg-purple-500 rounded-full animate-pulse flex items-center justify-center">
+                      <Brain className="text-white" size={16} />
+                    </div>
+                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-8 h-8 bg-cyan-500 rounded-full animate-bounce flex items-center justify-center">
+                      <Cpu className="text-white" size={16} />
+                    </div>
                   </div>
                 </div>
                 
-                {/* Floating Icons */}
-                <div className="absolute top-4 left-4 p-2 bg-white border border-gray-200 rounded-full shadow-sm">
-                  <Code className="text-blue-600" size={20} />
+                {/* Floating Circuit Icons */}
+                <div className="absolute top-4 left-4 p-2 bg-white border border-gray-200 rounded-full shadow-sm animate-float">
+                  <CircuitBoard className="text-blue-600" size={20} />
                 </div>
-                <div className="absolute top-4 right-4 p-2 bg-white border border-gray-200 rounded-full shadow-sm">
-                  <Brain className="text-purple-600" size={20} />
-                </div>
-                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 p-2 bg-white border border-gray-200 rounded-full shadow-sm">
-                  <Zap className="text-cyan-600" size={20} />
+                <div className="absolute top-4 right-4 p-2 bg-white border border-gray-200 rounded-full shadow-sm animate-pulse">
+                  <Zap className="text-purple-600" size={20} />
                 </div>
               </div>
             </div>
@@ -60,7 +77,7 @@ const About = () => {
                   </h3>
                   <p className="text-lg text-gray-600 leading-relaxed">
                     I'm <span className="font-semibold text-blue-600">Yashaswi Rajesh Patki</span>, an AI Engineer with a passion for building intelligent, real-world systems. 
-                    Currently pursuing my Master's in Artificial Intelligence at Yeshiva University, NY.
+                    Completed my Master's in Artificial Intelligence at Yeshiva University, NY.
                   </p>
                 </div>
 
@@ -86,22 +103,6 @@ const About = () => {
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
-
-          {/* Stats Section */}
-          <div className="grid md:grid-cols-3 gap-8 mb-20">
-            <div className="text-center bg-white rounded-2xl p-8 border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300">
-              <div className="text-4xl font-bold text-blue-600 mb-2">2+</div>
-              <div className="text-gray-600">Years Experience</div>
-            </div>
-            <div className="text-center bg-white rounded-2xl p-8 border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300">
-              <div className="text-4xl font-bold text-purple-600 mb-2">5+</div>
-              <div className="text-gray-600">AI Projects</div>
-            </div>
-            <div className="text-center bg-white rounded-2xl p-8 border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300">
-              <div className="text-4xl font-bold text-cyan-600 mb-2">4</div>
-              <div className="text-gray-600">Certifications</div>
             </div>
           </div>
 
