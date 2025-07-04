@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { GraduationCap, Briefcase, Award } from 'lucide-react';
+import { GraduationCap, Briefcase, Award, Quote } from 'lucide-react';
 
 const About = () => {
   return (
@@ -61,6 +60,24 @@ const About = () => {
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Motivational Quote */}
+          <div className="mb-16 animate-fade-in" style={{animationDelay: '0.5s'}}>
+            <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-3xl p-8 border border-gray-200 hover:shadow-lg transition-all duration-300 hover:scale-105 transform">
+              <div className="flex items-center justify-center mb-4">
+                <Quote className="text-blue-600 mr-3" size={32} />
+                <Quote className="text-purple-600 transform rotate-180" size={32} />
+              </div>
+              <blockquote className="text-center">
+                <p className="text-2xl font-medium text-gray-800 italic mb-4 leading-relaxed">
+                  "Be like a postage stamp, stick to one thing until you get there"
+                </p>
+                <footer className="text-lg text-gray-600 font-semibold">
+                  — Josh Billings
+                </footer>
+              </blockquote>
             </div>
           </div>
 
