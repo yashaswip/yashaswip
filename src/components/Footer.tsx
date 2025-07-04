@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import { Github, Linkedin, Mail, Heart, Award } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -79,6 +79,17 @@ const Footer = () => {
                   >
                     Contact
                   </button>
+                </li>
+                <li>
+                  <a
+                    href="https://www.credly.com/users/yashaswi-patki"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-white transition-colors duration-200 flex items-center"
+                  >
+                    <Award size={16} className="mr-1" />
+                    Credly Profile
+                  </a>
                 </li>
               </ul>
             </div>
