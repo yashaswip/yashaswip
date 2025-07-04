@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Github, Linkedin, Mail, Heart, Award } from 'lucide-react';
 
@@ -12,15 +11,15 @@ const Footer = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             {/* Brand Section */}
             <div>
-              <div className="text-5xl font-black mb-3">
+              <div className="text-3xl font-bold mb-3">
                 <span className="bg-gradient-to-r from-emerald-300 via-blue-300 to-purple-300 bg-clip-text text-transparent drop-shadow-lg">
                   Yashaswi Patki
                 </span>
               </div>
-              <div className="text-xl font-bold text-emerald-400 mb-4">
+              <div className="text-lg font-semibold text-emerald-400 mb-4">
                 AI & Systems Engineer
               </div>
-              <p className="text-gray-300 mb-4 leading-relaxed font-medium">
+              <p className="text-gray-300 mb-4 leading-relaxed text-sm">
                 Specialized in enterprise automation, AI integration, and scalable system architecture.
               </p>
               <div className="flex space-x-4">
