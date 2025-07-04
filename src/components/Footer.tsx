@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Github, Linkedin, Mail, Heart, Award } from 'lucide-react';
 
@@ -105,11 +106,6 @@ const Footer = () => {
                 <p className="text-gray-400">
                   <a href="mailto:ypatki@mail.yu.edu" className="hover:text-emerald-400 transition-colors duration-200 font-medium">
                     ypatki@mail.yu.edu
-                  </a>
-                </p>
-                <p className="text-gray-400">
-                  <a href="tel:+15513442977" className="hover:text-emerald-400 transition-colors duration-200 font-medium">
-                    +1 551-344-2977
                   </a>
                 </p>
                 <p className="text-gray-400 font-medium">New York, NY</p>
