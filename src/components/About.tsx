@@ -14,23 +14,23 @@ const About = () => {
 
           {/* Main Content Grid */}
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-            {/* Left Side - Robot Image */}
+            {/* Left Side - Animated Robot Image */}
             <div className="flex justify-center">
-              <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-200">
+              <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 hover:scale-105">
                 <img 
-                  src="/lovable-uploads/00cc0922-1e40-4dcd-802d-8bafe20eb138.png" 
-                  alt="Friendly Robot" 
-                  className="w-80 h-80 object-contain"
+                  src="/lovable-uploads/fff7d752-5ac5-4e8c-ab47-ea0b4b76e217.png" 
+                  alt="AI Robot Illustration" 
+                  className="w-80 h-80 object-contain animate-fade-in hover:animate-pulse"
                 />
               </div>
             </div>
 
-            {/* Right Side - Content */}
+            {/* Right Side - Content with animations */}
             <div>
               <div className="space-y-6">
-                <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+                <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in">
                   <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-                    <div className="w-3 h-3 bg-blue-600 rounded-full mr-3"></div>
+                    <div className="w-3 h-3 bg-blue-600 rounded-full mr-3 animate-pulse"></div>
                     Who I Am
                   </h3>
                   <p className="text-lg text-gray-600 leading-relaxed">
@@ -39,9 +39,9 @@ const About = () => {
                   </p>
                 </div>
 
-                <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+                <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in" style={{animationDelay: '0.2s'}}>
                   <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-                    <div className="w-3 h-3 bg-purple-600 rounded-full mr-3"></div>
+                    <div className="w-3 h-3 bg-purple-600 rounded-full mr-3 animate-pulse" style={{animationDelay: '0.5s'}}></div>
                     What I Do
                   </h3>
                   <p className="text-lg text-gray-600 leading-relaxed">
@@ -50,9 +50,9 @@ const About = () => {
                   </p>
                 </div>
 
-                <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+                <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in" style={{animationDelay: '0.4s'}}>
                   <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-                    <div className="w-3 h-3 bg-cyan-600 rounded-full mr-3"></div>
+                    <div className="w-3 h-3 bg-cyan-600 rounded-full mr-3 animate-pulse" style={{animationDelay: '1s'}}></div>
                     My Expertise
                   </h3>
                   <p className="text-lg text-gray-600 leading-relaxed">
@@ -64,15 +64,15 @@ const About = () => {
             </div>
           </div>
 
-          {/* Timeline */}
-          <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-200">
+          {/* Animated Timeline */}
+          <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 animate-fade-in" style={{animationDelay: '0.6s'}}>
             <h3 className="text-3xl font-bold text-center mb-12 text-gray-900">
               My Journey
             </h3>
             
             <div className="space-y-8">
-              <div className="flex items-start space-x-6 p-6 bg-blue-50 rounded-2xl">
-                <div className="flex-shrink-0 w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center">
+              <div className="flex items-start space-x-6 p-6 bg-blue-50 rounded-2xl hover:bg-blue-100 transition-all duration-300 hover:scale-105 transform">
+                <div className="flex-shrink-0 w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center hover:animate-pulse">
                   <GraduationCap className="text-white" size={28} />
                 </div>
                 <div className="flex-1">
@@ -82,8 +82,8 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-6 p-6 bg-purple-50 rounded-2xl">
-                <div className="flex-shrink-0 w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center">
+              <div className="flex items-start space-x-6 p-6 bg-purple-50 rounded-2xl hover:bg-purple-100 transition-all duration-300 hover:scale-105 transform">
+                <div className="flex-shrink-0 w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center hover:animate-pulse">
                   <Briefcase className="text-white" size={28} />
                 </div>
                 <div className="flex-1">
@@ -94,8 +94,8 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-6 p-6 bg-cyan-50 rounded-2xl">
-                <div className="flex-shrink-0 w-16 h-16 bg-cyan-600 rounded-full flex items-center justify-center">
+              <div className="flex items-start space-x-6 p-6 bg-cyan-50 rounded-2xl hover:bg-cyan-100 transition-all duration-300 hover:scale-105 transform">
+                <div className="flex-shrink-0 w-16 h-16 bg-cyan-600 rounded-full flex items-center justify-center hover:animate-pulse">
                   <Award className="text-white" size={28} />
                 </div>
                 <div className="flex-1">
@@ -108,16 +108,16 @@ const About = () => {
             </div>
           </div>
 
-          {/* Call to Action */}
-          <div className="text-center mt-16">
-            <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-3xl p-8">
+          {/* Animated Call to Action */}
+          <div className="text-center mt-16 animate-fade-in" style={{animationDelay: '0.8s'}}>
+            <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-3xl p-8 hover:shadow-lg transition-all duration-300 hover:scale-105 transform">
               <h3 className="text-2xl font-bold mb-4 text-gray-900">Ready to Collaborate?</h3>
               <p className="text-lg mb-6 text-gray-600">
                 I'm actively looking for full-time opportunities in AI/ML where I can contribute to innovative projects and continue growing as a technologist.
               </p>
               <button
                 onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold transition-colors duration-300"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 transform hover:shadow-lg"
               >
                 Let's Connect
               </button>
