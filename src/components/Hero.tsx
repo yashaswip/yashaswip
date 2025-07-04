@@ -17,8 +17,12 @@ const Hero = () => {
           {/* Profile Image */}
           <div className="mb-8 flex justify-center">
             <div className="w-48 h-48 rounded-full bg-gradient-to-br from-emerald-400 to-blue-500 p-1 shadow-2xl">
-              <div className="w-full h-full rounded-full bg-gray-200 flex items-center justify-center text-6xl font-bold text-gray-600">
-                YRP
+              <div className="w-full h-full rounded-full overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                  alt="AI Robot" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -31,7 +35,7 @@ const Hero = () => {
               </span>
             </h1>
             <h2 className="text-2xl md:text-3xl text-gray-700 mb-6 font-light">
-              AI Engineer | ML | NLP | Computer Vision
+              AI Engineer | ML | NLP | Gen AI
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
               Building intelligent systems with impact. Passionate about creating AI solutions that make a difference.

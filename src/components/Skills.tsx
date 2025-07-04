@@ -102,9 +102,9 @@ const Skills = () => {
                 <p className="text-gray-600">Text classification, sentiment analysis, and language models</p>
               </div>
               <div className="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-                <div className="text-4xl mb-4">👁️</div>
-                <h4 className="text-lg font-semibold text-gray-900 mb-2">Computer Vision</h4>
-                <p className="text-gray-600">Image classification, object detection, and medical imaging</p>
+                <div className="text-4xl mb-4">✨</div>
+                <h4 className="text-lg font-semibold text-gray-900 mb-2">Generative AI</h4>
+                <p className="text-gray-600">Large language models, multimodal AI, and generative systems</p>
               </div>
             </div>
           </div>

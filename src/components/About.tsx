@@ -21,7 +21,7 @@ const About = () => {
                 Bachelor's in Information Technology from Shri Sant Gajanan Maharaj College, India.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                I bring experience in ML, NLP, and Computer Vision with a practical background in deploying solutions 
+                I bring experience in ML, NLP, and Gen AI with a practical background in deploying solutions 
                 at scale. My work focuses on creating AI systems that make a meaningful impact in healthcare, 
                 automation, and data analysis.
               </p>
