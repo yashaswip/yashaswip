@@ -12,23 +12,23 @@ const Footer = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             {/* Brand Section */}
             <div>
-              <div className="text-4xl font-extrabold mb-2">
-                <span className="bg-gradient-to-r from-emerald-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
-                  Yashaswi Rajesh Patki
+              <div className="text-5xl font-black mb-3">
+                <span className="bg-gradient-to-r from-emerald-300 via-blue-300 to-purple-300 bg-clip-text text-transparent drop-shadow-lg">
+                  Yashaswi Patki
                 </span>
               </div>
-              <div className="text-lg font-medium text-emerald-400 mb-4">
-                AI Engineer & System Architect
+              <div className="text-xl font-bold text-emerald-400 mb-4">
+                AI & Systems Engineer
               </div>
-              <p className="text-gray-400 mb-4 leading-relaxed">
-                Passionate about building intelligent systems that make a difference through innovative technology solutions.
+              <p className="text-gray-300 mb-4 leading-relaxed font-medium">
+                Specialized in enterprise automation, AI integration, and scalable system architecture.
               </p>
               <div className="flex space-x-4">
                 <a
                   href="https://github.com/yashaswip"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-emerald-400 transition-colors duration-200 hover:scale-110 transform"
+                  className="text-gray-400 hover:text-emerald-400 transition-all duration-300 hover:scale-125 transform"
                 >
                   <Github size={28} />
                 </a>
@@ -36,13 +36,13 @@ const Footer = () => {
                   href="https://linkedin.com/in/yashaswi-patki"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-blue-400 transition-colors duration-200 hover:scale-110 transform"
+                  className="text-gray-400 hover:text-blue-400 transition-all duration-300 hover:scale-125 transform"
                 >
                   <Linkedin size={28} />
                 </a>
                 <a
                   href="mailto:ypatki@mail.yu.edu"
-                  className="text-gray-400 hover:text-emerald-400 transition-colors duration-200 hover:scale-110 transform"
+                  className="text-gray-400 hover:text-emerald-400 transition-all duration-300 hover:scale-125 transform"
                 >
                   <Mail size={28} />
                 </a>
