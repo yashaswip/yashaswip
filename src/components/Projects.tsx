@@ -76,30 +76,30 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+    <section id="projects" className="py-12 bg-gradient-to-br from-gray-50 to-gray-100">
       <div className="container mx-auto px-4">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-4">
+          <div className="text-center mb-10">
+            <h2 className="text-4xl font-bold mb-3">
               <span className="bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
                 Featured Projects
               </span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Showcasing innovative AI solutions that solve real-world problems
             </p>
           </div>
 
           {/* Projects Grid */}
-          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 mb-12">
+          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 mb-10">
             {projects.map((project, index) => (
               <div
                 key={index}
-                className={`bg-white rounded-3xl border-2 transition-all duration-300 hover:shadow-2xl hover:shadow-gray-200/50 p-6 h-full flex flex-col transform hover:-translate-y-2 ${getColorClasses(project.color)}`}
+                className={`bg-white rounded-2xl border-2 transition-all duration-300 hover:shadow-xl hover:shadow-gray-200/40 p-5 h-full flex flex-col transform hover:-translate-y-1 ${getColorClasses(project.color)}`}
               >
                 {/* Project Image */}
-                <div className="relative h-48 rounded-2xl overflow-hidden mb-6 group">
+                <div className="relative h-40 rounded-xl overflow-hidden mb-4 group">
                   <img 
                     src={project.image} 
                     alt={project.title}
@@ -108,9 +108,9 @@ const Projects = () => {
                   <div className={`absolute inset-0 bg-gradient-to-br ${getGradientColors(project.color)} opacity-20 group-hover:opacity-30 transition-opacity`}></div>
                   
                   {/* Date Badge */}
-                  <div className="absolute top-4 right-4">
-                    <div className="bg-white/90 backdrop-blur-sm rounded-full px-3 py-1 flex items-center gap-2">
-                      <Calendar size={12} className="text-gray-600" />
+                  <div className="absolute top-3 right-3">
+                    <div className="bg-white/90 backdrop-blur-sm rounded-full px-2 py-1 flex items-center gap-1">
+                      <Calendar size={10} className="text-gray-600" />
                       <span className="text-xs font-medium text-gray-700">{project.date}</span>
                     </div>
                   </div>
@@ -118,15 +118,15 @@ const Projects = () => {
 
                 {/* Project Content */}
                 <div className="flex-1 flex flex-col">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">{project.title}</h3>
+                  <h3 className="text-lg font-bold text-gray-900 mb-2 line-clamp-2">{project.title}</h3>
                   
-                  <p className="text-gray-600 mb-4 leading-relaxed flex-1">
+                  <p className="text-gray-600 mb-3 leading-relaxed flex-1 text-sm">
                     {project.description}
                   </p>
 
                   {/* Tech Stack */}
-                  <div className="mb-4">
-                    <div className="flex flex-wrap gap-2">
+                  <div className="mb-3">
+                    <div className="flex flex-wrap gap-1">
                       {project.techStack.slice(0, 3).map((tech, idx) => (
                         <span
                           key={idx}
@@ -144,11 +144,11 @@ const Projects = () => {
                   </div>
 
                   {/* Key Highlights */}
-                  <div className="mb-6">
+                  <div className="mb-4">
                     <ul className="space-y-1">
                       {project.highlights.slice(0, 2).map((highlight, idx) => (
-                        <li key={idx} className="flex items-start text-sm">
-                          <div className={`w-1.5 h-1.5 rounded-full bg-gradient-to-r ${getGradientColors(project.color)} mt-2 mr-2 flex-shrink-0`}></div>
+                        <li key={idx} className="flex items-start text-xs">
+                          <div className={`w-1 h-1 rounded-full bg-gradient-to-r ${getGradientColors(project.color)} mt-1.5 mr-2 flex-shrink-0`}></div>
                           <span className="text-gray-600">{highlight}</span>
                         </li>
                       ))}
@@ -161,11 +161,11 @@ const Projects = () => {
                       href={project.githubLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`w-full inline-flex items-center justify-center px-4 py-3 bg-gradient-to-r ${getGradientColors(project.color)} text-white rounded-xl font-semibold hover:shadow-lg transition-all duration-200 hover:scale-105 group`}
+                      className={`w-full inline-flex items-center justify-center px-3 py-2 bg-gradient-to-r ${getGradientColors(project.color)} text-white rounded-lg font-semibold hover:shadow-md transition-all duration-200 hover:scale-105 group text-sm`}
                     >
-                      <Github size={16} className="mr-2" />
+                      <Github size={14} className="mr-2" />
                       <span>View Project</span>
-                      <ExternalLink size={14} className="ml-2 group-hover:translate-x-1 transition-transform" />
+                      <ExternalLink size={12} className="ml-2 group-hover:translate-x-1 transition-transform" />
                     </a>
                   </div>
                 </div>
@@ -175,20 +175,20 @@ const Projects = () => {
 
           {/* GitHub CTA */}
           <div className="text-center">
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 max-w-md mx-auto">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Want to see more?</h3>
-              <p className="text-gray-600 mb-6">
+            <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-200 max-w-md mx-auto">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Want to see more?</h3>
+              <p className="text-gray-600 mb-4 text-sm">
                 Explore my complete portfolio on GitHub
               </p>
               <a
                 href="https://github.com/yashaswip"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-8 py-3 bg-gray-900 text-white rounded-xl font-semibold hover:bg-gray-800 transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                className="inline-flex items-center px-6 py-2 bg-gray-900 text-white rounded-lg font-semibold hover:bg-gray-800 transition-all duration-300 hover:scale-105 hover:shadow-md text-sm"
               >
-                <Github size={20} className="mr-2" />
+                <Github size={16} className="mr-2" />
                 Visit GitHub Profile
-                <ExternalLink size={16} className="ml-2" />
+                <ExternalLink size={14} className="ml-2" />
               </a>
             </div>
           </div>
