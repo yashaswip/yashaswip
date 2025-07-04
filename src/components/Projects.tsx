@@ -15,7 +15,7 @@ const Projects = () => {
         'Veterinary imaging application'
       ],
       color: 'emerald',
-      image: 'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80'
+      image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.researchgate.net%2Ffigure%2FOur-calculation-of-VHS-there-are-six-key-points-A-B-C-D-E-and-F-VHS-6-AB_fig2_377471128&psig=AOvVaw23pIEJkCjCyAzp2Nf2OPDj&ust=1751732327921000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCNDU_svNo44DFQAAAAAdAAAAABAE&auto=format&fit=crop&w=1000&q=80'
     },
     {
       title: 'Comments Indecency Detector',
