@@ -8,7 +8,6 @@ I build intelligent systems that connect ML research to real-world impact — es
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yashaswi-patki)
 [![Email](https://img.shields.io/badge/Email-yashaswi.rp%40profilemails.com-7c3aed?style=for-the-badge&logo=gmail&logoColor=white)](mailto:yashaswi.rp@profilemails.com)
 [![ResearchGate](https://img.shields.io/badge/ResearchGate-00CCBB?style=for-the-badge&logo=researchgate&logoColor=white)](https://www.researchgate.net/profile/Yashaswi-Patki)
-[![Resume](https://img.shields.io/badge/Resume-Download-111827?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1xU3FC8hJHX1aA4pXXpHSqyXcLALeC80-/view?usp=share_link)
 [![GitHub](https://img.shields.io/badge/GitHub-yashaswip-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yashaswip)
 
 ---
